@@ -1,5 +1,8 @@
 @import url('./modern-normalize.min.css');
 
+/* Fonts */
+@import url('./fonts.css');
+
 /* Root */
 @import url('./variables.css');
 
