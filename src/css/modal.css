@@ -14,6 +14,7 @@
   padding: 40px 20px 22px;
   background-color: #ffffff;
   border-radius: 4px;
+  
   position: relative;
   top: 50%;
   left: 50%;
@@ -30,7 +31,11 @@
     visibility: hidden;
     pointer-events: none;
   /* } */
-
+.moodal-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .modal-close {
   display: block;
   position: absolute;
