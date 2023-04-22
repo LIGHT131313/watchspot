@@ -1,3 +1,80 @@
 .header {
-  
+  background-color: black;
+  display: flex;
+}
+.text-link{font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.03em;color: var(--color-white);}
+.text-header{font-family: Epilogue;font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;letter-spacing: -0.02em;
+    text-transform: uppercase;color: var(--color-white);  display: inline; }
+    .text-header:not(:last-child){margin-right: 40px;}
+.address{color: var(--color-white);font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;text-align: center;
+    text-transform: uppercase;
+    padding: 18px 36px 18px 35px;
+    background-color: var(--color-dark-green);border-radius: 8px;}
+    .container-header{display: flex; align-items: center; justify-content: space-between;}
+
+    .logo{ display: flex; align-items: center;
+     
+    }
+
+.logo-svg{  width: 14px;height: 14px;  display: inline-block;margin-right: 4px;  }
+
+
+
+
+    @media screen and (min-width: 375px) {
+       
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 767px) {
+.text-header{display: none;}.address{display: none;} .container-header{padding-top: 29px;}   .container{width: 768px;}   }
+
+        @media screen and (min-width: 768px) {.menu-open{display: none; }
+        .nav-menu{ gap: 40px;display: flex;}
+    .logo{margin-right: 80px;  }
+    .container{max-width: 704px;}
+    .header-link{display: flex;}
+    .container-header{ padding-top: 20px;} 
+    .text-link{font-size: 15px;
+        line-height: 15px;}
+        .mob-menu{display: none; }
+    
+    
+    }
+
+
+
+
+
+
+
+            @media screen and (min-width: 1280px) {  
+                .container{ width:1176px;} 
+         .menu-open{display: none;}   .logo-header{margin-right: 80px;}
+    .nav-menu{ gap: 40px;display: flex; }
+    .logo{margin-right: 80px;}
+    .container-header{padding-top: 20px;} 
+   .text-link{font-size: 15px;
+    line-height: 15px;}
+.mob-menu{display: none; }
 }
