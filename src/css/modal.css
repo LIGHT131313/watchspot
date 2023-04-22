@@ -27,18 +27,9 @@ img {
   text-decoration: none;
 }
 
-.btn {
-  font-family: 'Roboto', sans-serif;
-  border-radius: 4px;
-  cursor: pointer;
-  letter-spacing: 0.04em;
-  line-height: 1.5;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-
 .backdrop {
+  overflow-y: scroll;
+  overflow-x: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,22 +39,23 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal {
   width: 335px;
-  
+
   padding: 40px 20px 22px;
   background-color: #ffffff;
   border: none;
   position: relative;
-  top: 50%;
-  left: 50%;
+  top: 25%;
+  left: 25%;
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
     0px 0px 130.6px rgba(0, 0, 0, 0.037963),
     0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
     0px 0px 36.2375px rgba(0, 0, 0, 0.025),
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
-  transform: translate(-50%, -50%) scaleY(0);
+
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-wrap {
@@ -75,7 +67,6 @@ img {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scaleY(1);
 }
 
 /* .is-hidden { 
@@ -108,11 +99,14 @@ img {
 
 .modal-catalog-wrap {
   width: 276px;
-  height: 393px;
 }
 .modal-catalog-img {
   padding-top: 26px;
   padding-bottom: 26px;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  margin-bottom: 14px;
 }
 .modal-text-wrap {
 }
@@ -148,10 +142,9 @@ img {
   gap: 18px;
 }
 .modal-input-wrap {
-  
 }
 .modal-input {
-    width: 100%;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(20, 20, 20, 0.5);
   border-radius: 8px;
@@ -159,7 +152,8 @@ img {
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-label-text {
   display: inline-block;
@@ -223,4 +217,5 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.4);
 }
