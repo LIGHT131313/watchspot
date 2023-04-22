@@ -1,3 +1,43 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -10,32 +50,41 @@
 }
 .modal {
   width: 335px;
-  height: 1073px;
+  
   padding: 40px 20px 22px;
   background-color: #ffffff;
-  border-radius: 4px;
-  
+  border: none;
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scaleY(1);
+  box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
+    0px 0px 130.6px rgba(0, 0, 0, 0.037963),
+    0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
+    0px 0px 36.2375px rgba(0, 0, 0, 0.025),
+    0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
+    0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
+  transform: translate(-50%, -50%) scaleY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
 
-/* .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scaleY(2);
-  } 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(1);
+}
 
-  .is-hidden {
+/* .is-hidden { 
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  /* } */
-.moodal-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
+  }
+   */
+
 .modal-close {
   display: block;
   position: absolute;
@@ -57,37 +106,61 @@
   fill: red;
 }
 
-/* 
 .modal-catalog-wrap {
+  width: 276px;
+  height: 393px;
 }
 .modal-catalog-img {
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .modal-text-wrap {
 }
 .modal-text-wrap-title {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: black;
 }
 .modal-text-wrap-text {
-} */
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+}
 
 .modal-form {
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .modal-user-input {
   display: flex;
   flex-direction: column;
-  gap: ;
+  gap: 18px;
 }
 .modal-input-wrap {
-  width: 100%;
+  
+}
+.modal-input {
+    width: 100%;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  padding-left: 38px;
-  outline: none;
+  border: 1px solid rgba(20, 20, 20, 0.5);
+  border-radius: 8px;
+  padding: 12px 16px;
+  outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .modal-label-text {
   display: inline-block;
   margin-bottom: 4px;
@@ -102,19 +175,19 @@
 
 .modal-textarea {
   width: 100%;
-  height: 120px;
+  height: 170px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   outline: transparent;
   background-color: transparent;
   resize: none;
-  padding: 8px 16px;
+  padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea::placeholder {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 16px;
   font-family: 'Epilogue';
   font-style: normal;
@@ -122,19 +195,24 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: black;
+  color: var(--color-black);
 }
-
-.btn {
+.modal-submit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .modal-sent-btn {
-  min-width: 169px;
-  height: 56px;
+  width: 295px;
+  height: 50px;
   color: #ffffff;
-  background-color: green;
+  display: block;
+  background-color: var(--color-dark-green);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 4px solid green;
-  margin: 0 95px auto;
+  border: 4px solid var(--color-dark-green);
+  border-radius: 8px;
+  margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
