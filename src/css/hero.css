@@ -20,6 +20,7 @@
 }
 .hero-container {
   padding-top: 122px;
+  padding-bottom: 40px;
 }
 .swiper_slider {
   margin-top: 60px;
@@ -48,8 +49,7 @@
   display: flex;
   gap: 12px;
 }
-.swiper-previous,
-.swiper-next {
+.swiper-previous {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,18 +60,30 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.swiper-previous:is(:hover, :focus),
+.swiper-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* .swiper-previous:is(:hover, :focus),
 .swiper-next:is(:hover, :focus) {
   border-color: var(--color-white);
-}
-.swiper-button-icon {
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+} */
+.swiper-previous .swiper-button-icon {
   width: 18px;
   height: 18px;
-  fill: var(--color-white);
-  stroke: var(--color-white);
+  stroke: rgba(255, 255, 255, 0.5);
+}
+.swiper-next .swiper-button-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
 }
 .swiper-pagination {
   display: flex;
@@ -102,6 +114,7 @@
 }
 .hero-text {
   margin-top: 40px;
+  margin-bottom: 40px;
   margin-left: auto /*87px*/;
   max-width: 248px;
   font-weight: 300;
@@ -111,8 +124,7 @@
   color: var(--color-white);
 }
 .hero-image {
-  margin-top: 40px;
-  padding-bottom: 40px;
+  width: auto;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -120,6 +132,7 @@
   }
   .hero-container {
     padding-top: 148px;
+    padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -143,6 +156,14 @@
     width: 40px;
     height: 40px;
   }
+  .swiper-previous .swiper-button-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .swiper-next .swiper-button-icon {
+    width: 24px;
+    height: 24px;
+  }
   .swiper-pagination {
     display: flex;
     align-items: center;
@@ -159,7 +180,6 @@
   .hero-image {
     width: auto;
     margin-top: 40px;
-    padding-bottom: 64px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -170,6 +190,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 80px;
   }
   .hero-title {
     order: 1;
@@ -189,7 +210,6 @@
     order: 4;
     width: auto;
     margin-top: 43px;
-    padding-bottom: 64px;
     margin-left: 64px;
   }
 }

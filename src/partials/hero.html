@@ -5,11 +5,11 @@
       <img
         class="swiper-image"
         srcset="
-          ./img/hero-swiper-1-mobile.webp   226w,
-          ./img/hero-swiper-1-pc-table.webp 348w
+          ./img/hero/hero-swiper-1-mobile.webp   226w,
+          ./img/hero/hero-swiper-1-pc-table.webp 348w
         "
         sizes="(min-width: 768px) 348px, (min-width: 320px) 226px, 100vw"
-        src="./img/hero-swiper-1-mobile.webp"
+        src="./img/hero/hero-swiper-1-mobile.webp"
         alt="Watch"
       />
     </div>
@@ -19,14 +19,14 @@
         <div class="swipper-button-pev">
           <button class="swiper-previous" type="button">
             <svg class="swiper-button-icon">
-              <use href=".img/icons.svg#chevron-left-dark-18"></use>
+              <use href="./img/icons.svg#chevron-left-dark-18"></use>
             </svg>
           </button>
         </div>
         <div class="swipper-button-pev">
           <button class="swiper-next" type="button">
             <svg class="swiper-button-icon">
-              <use href=".img/icons.svg#chevron-right-light-18"></use>
+              <use href="./img/icons.svg#chevron-right-light-18"></use>
             </svg>
           </button>
         </div>
@@ -46,23 +46,29 @@
 
   <picture class="hero-image">
     <source
-      srcset="./img/hero-hand-pc.jpg 1x, ./img/hero-hand-pc@2x.jpg"
+      srcset="./img/hero/hero-hand-pc.jpg 1x, ./img/hero/hero-hand-pc@2x.jpg 2x"
       type="image/jpeg"
       media="(min-width: 1280px)"
       sizes="(min-width: 1280px) 676px"
     />
     <source
-      srcset="./img/hero-hand-table.jpg 1x, ./img/hero-hand-table@2x.jpg"
+      srcset="
+        ./img/hero/hero-hand-mobile.jpg    1x,
+        ./img/hero/hero-hand-mobile@2x.jpg 2x
+      "
+      type="image/jpeg"
+      media="(max-width: 767px)"
+      sizes="(max-width: 767px) 335px"
+    />
+    <source
+      srcset="
+        ./img/hero/hero-hand-table.jpg    1x,
+        ./img/hero/hero-hand-table@2x.jpg 2x
+      "
       type="image/jpeg"
       media="(min-width: 768px)"
       sizes="(min-width: 768px) 704px"
     />
-    <source
-      srcset="./img/hero-hand-pc.jpg 1x, ./img/hero-hand-pc@2x.jpg"
-      type="image/jpeg"
-      media="(min-width: 1280px)"
-      sizes="(min-width: 1280px) 676px"
-    />
-    <img src="./img/hero-hand-mobile.jpg" alt="Hand-watch" />
+    <img src="./img/hero/hero-hand-mobile.jpg" alt="Hand with watch" />
   </picture>
 </div>
