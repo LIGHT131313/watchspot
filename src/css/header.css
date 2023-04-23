@@ -15,11 +15,11 @@
     line-height: 18px;letter-spacing: -0.02em;
     text-transform: uppercase;color: var(--color-white);  display: inline; }
   .text-header:hover,
-  :focus{color: var(--color-dark-green); transition: background-color var(--transition);}
+  :focus{opacity: 0.7; transition: opacity var(--transition);}
   .address:hover,
-  :focus{background-color: var(--color-black); transition: background-color var(--transition);}
+  :focus{opacity: 0.7; transition: opacity var(--transition);}
   
-/* .menu-close-img{ width: 24px; height: 24px;} */
+
 .address{color: var(--color-white);font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
