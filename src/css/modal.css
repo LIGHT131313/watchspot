@@ -190,6 +190,8 @@ input:valid {
 }
 .modal-submit {
   width: 100%;
+  
+
 }
 
 .modal-sent-btn {
@@ -241,7 +243,7 @@ input:valid {
 @media screen and (min-width: 768px) {
   .modal {
     width: 744px;
-    padding: 40px;
+    padding: 40px 40px 20px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -276,7 +278,11 @@ input:valid {
     font-size: 16px;
     line-height: 1.29;
   }
-  
+  .modal-sent-btn-text {
+    white-space: pre-line;
+    margin-top: 0;
+    
+   }
 }
 @media screen and (min-width: 1280px) {
   .modal {
@@ -296,7 +302,5 @@ input:valid {
   .modal-user-input {
     gap: 24px;
   }
-   .modal-sent-btn-text {
-    white-space: pre-line;
-   }
+   
 }
