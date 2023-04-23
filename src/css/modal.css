@@ -296,9 +296,7 @@ input:valid {
   .modal-user-input {
     gap: 24px;
   }
-   /* .modal-text-link::after {
-     content: '';
-     width: 100%;
-     display: inline;
-    }  */
+   .modal-sent-btn-text {
+    white-space: pre-line;
+   }
 }
