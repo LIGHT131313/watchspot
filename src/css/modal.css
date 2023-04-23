@@ -132,16 +132,16 @@
 }
 
  
-/* input:not(:required):invalid {
+/* input:invalid:not(:required) {
   border-color: red;
  }
-input:is(:required):valid {
+input:valid:is(:required) {
   border-color: rgba(20, 20, 20, 0.5);
  }
 
 input:valid {
   border-color: rgba(20, 20, 20, 0.5);
- } */
+ }  */
 
 .modal-input::placeholder {
   font-weight: 400;
