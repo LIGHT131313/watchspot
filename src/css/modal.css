@@ -131,16 +131,16 @@
   border-color: var(--color-black);
 }
 
-/* .modal-input:valid {
-  border-color:  rgba(20, 20, 20, 0.5);
+ 
+input:not(:required):invalid {
+  border-color: red;
+ }
+input:is(:required):valid {
+  border-color: rgba(20, 20, 20, 0.5);
  }
 
-.modal-input:required {
+input:valid {
   border-color: rgba(20, 20, 20, 0.5);
- } */
-
- .modal-input:invalid.modal-input:not(:required) {
-  border-color: red;
  }
 
 .modal-input::placeholder {
@@ -296,9 +296,9 @@
   .modal-user-input {
     gap: 24px;
   }
-   .modal-sent-btn-text {
-     white-space: normal;
-     inline-size: 376px; 
-     overflow: hidden;
-    } 
+   /* .modal-text-link::after {
+     content: '';
+     width: 100%;
+     display: inline;
+    }  */
 }
