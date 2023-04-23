@@ -13,11 +13,12 @@
   letter-spacing: -0.04em;
   color: var(--color-white);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero-title {
     max-width: 335px;
   }
 }
+
 .hero-container {
   padding-top: 122px;
   padding-bottom: 40px;
@@ -49,7 +50,8 @@
   display: flex;
   gap: 12px;
 }
-.swiper-previous {
+.swiper-previous,
+.swiper-next {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,31 +62,25 @@
   border-radius: 8px;
   cursor: pointer;
 }
-.swiper-next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px;
-  height: 32px;
-  background-color: transparent;
-  border: 1px solid var(--color-white);
-  border-radius: 8px;
-  cursor: pointer;
+.chevron-right-24,
+.chevron-left-24 {
+  display: none;
 }
-/* .swiper-previous:is(:hover, :focus),
+.swiper-previous:is(:hover, :focus),
 .swiper-next:is(:hover, :focus) {
   border-color: var(--color-white);
-} */
-.swiper-previous .swiper-button-icon {
+}
+.swiper-previous:is(:hover, :focus) .chevron-left-18,
+.swiper-next:is(:hover, :focus) .chevron-right-18 {
+  stroke: #fff;
+}
+.swiper-previous .swiper-button-icon,
+.swiper-next .swiper-button-icon {
   width: 18px;
   height: 18px;
   stroke: rgba(255, 255, 255, 0.5);
 }
-.swiper-next .swiper-button-icon {
-  width: 18px;
-  height: 18px;
-  stroke: #fff;
-}
+
 .swiper-pagination {
   display: flex;
   align-items: center;
@@ -156,13 +152,27 @@
     width: 40px;
     height: 40px;
   }
-  .swiper-previous .swiper-button-icon {
-    width: 24px;
-    height: 24px;
+  .chevron-right-18,
+  .chevron-left-18 {
+    display: none;
   }
+  .chevron-right-24,
+  .chevron-left-24 {
+    display: block;
+  }
+  .swiper-previous:is(:hover, :focus),
+  .swiper-next:is(:hover, :focus) {
+    border-color: var(--color-white);
+  }
+  .swiper-previous:is(:hover, :focus) .chevron-left-24,
+  .swiper-next:is(:hover, :focus) .chevron-right-24 {
+    stroke: rgba(255, 255, 255, 1);
+  }
+  .swiper-previous .swiper-button-icon,
   .swiper-next .swiper-button-icon {
     width: 24px;
     height: 24px;
+    stroke: rgba(255, 255, 255, 0.5);
   }
   .swiper-pagination {
     display: flex;
