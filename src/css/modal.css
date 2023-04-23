@@ -132,7 +132,7 @@
 }
 
  
-input:not(:required):invalid {
+/* input:not(:required):invalid {
   border-color: red;
  }
 input:is(:required):valid {
@@ -141,7 +141,7 @@ input:is(:required):valid {
 
 input:valid {
   border-color: rgba(20, 20, 20, 0.5);
- }
+ } */
 
 .modal-input::placeholder {
   font-weight: 400;
