@@ -4,7 +4,7 @@
     font-size: 14px;
     line-height: 18px; letter-spacing: -0.02em;
     text-transform: uppercase;color: var(--color-white);}
-  .text-menu:not(:last-child){margin-bottom: 14px;}
+  .text-margin:not(:last-child){margin-bottom: 14px;}
   
     .is-hidden {
         opacity: 0;
@@ -16,14 +16,14 @@
     .menu-open {
         background-color: transparent;
         border: none;
-        padding:1px 6px ;fill: var(--color-white);
+
     }
-    .text-position{position: absolute;top: 253px;margin-left:200px; margin-right: auto; }
+    .text-position{position: absolute;top: 197px;  }
     .menu-close{ position: absolute;top: 32px;right: 9px;
         display: flex;
         justify-content: center;
         align-items: center;
-    width: 24px; height: 24px; 
+    width: 24px; height: 24px; background-color: var(--color-dark-green);border: none;
     }
     .menu-icon{display: flex; justify-content: center;align-items: center;}
 
