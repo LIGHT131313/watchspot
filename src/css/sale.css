@@ -1,3 +1,244 @@
 .sale {
-  
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sale-title {
+    margin-bottom: 40px;
+
+    color: var(--color-black);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.images-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-name {
+    margin-bottom: 40px;
+}
+
+.name-title {
+    margin-bottom: 8px;
+
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.product-tag {
+    margin-bottom: 16px;
+
+    color: rgba(20, 20, 20, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
+.price-list {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.price-item-bold {
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+}
+
+.price-item {
+    position: relative;
+
+    color: rgba(20, 20, 20, 0.5);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+}
+
+.price-item::before {
+    /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    background-color: rgba(20, 20, 20, 0.5); */
+
+    content: "";
+    border-bottom: 1px solid rgba(20, 20, 20, 0.5);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.product-description {
+    margin-bottom: 40px;
+}
+
+.product-description::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+.description-subtitle {
+    position: relative;
+
+    margin-top: 8px;
+    margin-bottom: 17px;
+
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.description-subtitle::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    margin-left: auto;
+    background-color: var(--color-black);
+}
+
+.description-text {
+    color: rgba(20, 20, 20, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+}
+
+.product-details::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-black);
+}
+
+.details-subtitle {
+    position: relative;
+
+    margin-top: 8px;
+    margin-bottom: 17px;
+
+    color: var(--color-black);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.details-subtitle::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    content: "";
+    display: block;
+    width: 16px;
+    height: 1px;
+    margin-left: auto;
+    background-color: var(--color-black);
+}
+
+.details-list {
+    color: rgba(20, 20, 20, 0.5);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.01em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 744px;
+    }
+
+    .sale {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    .sale-blocks {
+        width: 572px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sale-title {
+        color: var(--color-dark-green);
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .name-title {
+        font-size: 38px;
+        line-height: 1.05;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1216px;
+    }
+
+    .sale {
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+
+    .sale-blocks {
+        display: flex;
+        width: 981px;
+    }
+
+    .sale-title {
+        margin-bottom: 80px;
+    }
+
+    .product {
+        flex-direction: column;
+        width: 369px;
+        margin-left: 40px;
+    }
 }
