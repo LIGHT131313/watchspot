@@ -36,7 +36,7 @@
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.29;
-    transition: color var(--transition)
+    transition: opacity var(--transition)
 }
 
 .footer-adress-link {
@@ -44,7 +44,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    transition: color var(--transition)
+    transition: opacity var(--transition)
 }
 
 .footer-nav-list-link {
@@ -52,7 +52,7 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    transition: color var(--transition)
+    transition: opacity var(--transition)
 }
 
 .footer-nav-list-item:not(:last-child) {
@@ -69,7 +69,7 @@
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    transition: border-color var(--transition);    
+    transition: border-color var(--transition), opacity var(--transition)
 }
 
 .footer-sn-link {
@@ -86,6 +86,7 @@
 
 .footer-sn-icon {
     fill: currentColor;
+    opacity: 0.8
 }
 
 .footer-privacy {
@@ -163,6 +164,7 @@
 
     .footer-sn-icon-big {
         fill: currentColor;
+        opacity: 0.8;
     }
 
     .footer-privacy {
@@ -191,41 +193,52 @@
         margin-bottom: 174px;
     }
 
+    .footer-logo-link svg{
+        transition: opacity var(--transition);
+    }
+
+    .footer-logo-link:hover svg,
+    .footer-logo-link:focus svg {
+        opacity: 0.7;
+    }
+
     .footer-tel-link:hover,
     .footer-tel-link:focus {
-        color: var(--color-black);
+        opacity: 0.7;
     }
 
     .footer-adress-link:hover,
     .footer-adress-link:focus {
-        color: var(--color-black);
+        opacity: 0.7;
     }
 
     .footer-nav-list-link:hover,
     .footer-nav-list-link:focus {
-        color: var(--color-black);
+        opacity: 0.7;
     }
 
     .footer-sn-item:hover,
     .footer-sn-item:focus {
-        border-color: var(--color-black);
+        border-color: var(--color-white);
+        opacity: 1;
     }
 
     .footer-sn-item .footer-sn-icon-big {
-        transition: var(--transition);
+        transition: fill var(--transition), opacity var(--transition)
     }
 
     .footer-sn-item:hover .footer-sn-icon-big,
     .footer-sn-item:focus .footer-sn-icon-big {
-        fill: var(--color-black);
+        fill: var(--color-white);
+        opacity: 1;
     }
 
     .footer-privacy-list-link {
-        transition: var(--transition);
+        transition: opacity var(--transition);
     }
 
     .footer-privacy-list-link:hover,
     .footer-privacy-list-link:focus {
-        color: var(--color-black);
+        opacity: 0.7;
     }
 }
