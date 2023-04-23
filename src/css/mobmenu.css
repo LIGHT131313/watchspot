@@ -13,7 +13,7 @@
 
         transform: translate(-50%, -50%) scale(0.8);
     }
-    .menu-close-img{width: 12px;height: 12px;}
+    .menu-close-img{width: 12px;height: 12px; stroke: var(--color-white);} 
     .menu-open {
         background-color: transparent;
         border: none;
