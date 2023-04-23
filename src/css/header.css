@@ -1,10 +1,10 @@
 .header {
-  background-color: black;
+  background-color: var(--color-black);
   display: flex;
 }
 .header-link-list{display: flex;}
-.text-link{font-family: 'Epilogue';
-    font-style: normal;
+.text-link{
+
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
@@ -19,9 +19,9 @@
   .address:hover,
   :focus{opacity: 0.7; transition: opacity var(--transition);}
   
-
-.address{color: var(--color-white);font-family: 'Epilogue';
-    font-style: normal;
+.mob-menu .position{display: flex;   justify-content: center;margin-top: 197px;}
+.address{color: var(--color-white);
+  
     font-weight: 400;
     font-size: 9px;
     line-height: 12px;text-align: center;
