@@ -1,5 +1,5 @@
-.sale-container {
-    padding-top: 80px;
+.sale {
+    padding-top: 40px;
     padding-bottom: 80px;
 }
 
@@ -182,8 +182,8 @@
         max-width: 744px;
     }
 
-    .sale-container {
-        padding-top: 128px;
+    .sale {
+        padding-top: 64px;
         padding-bottom: 128px;
     }
 
@@ -212,10 +212,6 @@
     }
 
     .sale {
-        background-color: #FBFBFB;
-    }
-
-    .sale-container {
         padding-top: 80px;
         padding-bottom: 160px;
     }
