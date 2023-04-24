@@ -10,6 +10,7 @@
     line-height: 12px;
     letter-spacing: -0.03em;
     color: var(--color-white);
+    margin-left: 4px; 
 }
 
 .text-header{
@@ -53,11 +54,12 @@
 .header-logo{
     display: flex;
     align-items: center;
+    gap: 4px;
 }
     .logo{
     display: flex;
     align-items: center;
-    gap: 4px;
+    
 }
 .logo-text{  
     font-weight: 400;
