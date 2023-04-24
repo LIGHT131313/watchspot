@@ -22,6 +22,7 @@ color: var(--color-black);
 
 .about-us-list{
 margin-bottom: 40px;
+
 }
 
 .abous-us-list-div{
@@ -41,6 +42,11 @@ gap: 20px;}
     .container {
     max-width: 744px;
     }
+
+    .about-us-list{
+        display: inline-block;
+        
+        }
     
     .about-us {
         padding-top: 64px;
