@@ -1,21 +1,18 @@
 
 .about-us {
+    padding-top: 40px;
 }
 .container {
 }
 .about-us-title {
-    font-family: 'Epilogue';
-font-style: normal;
 font-weight: 600;
 font-size: 32px;
 line-height: 1.25;letter-spacing: -0.02em;
 color: var( --color-dark-green);
-margin-top: 40px;
 margin-bottom: 40px;
 }
+
 .about-us-text {
-    font-family: 'Epilogue';
-font-style: normal;
 font-weight: 300;
 font-size: 14px;
 line-height: 1.29;
@@ -24,24 +21,28 @@ color: var(--color-black);
 }
 
 .about-us-list{
-  
-
 margin-bottom: 40px;
 }
-.abous-us-list-div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;}
-.about-us-list-item{
 
-}
+.abous-us-list-div{
+display: flex;
+flex-direction: column;
+gap: 20px;}
+    
+.about-us-list-item{}
+
 .about-us-gif {
-    margin-right: 0;
-  display: block;
+margin-right: 0;
+ display: block;
 }
-@media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 768px) {
     .container {
-        max-width: 744px;
+    max-width: 744px;
+    }
+    
+    .about-us {
+        padding-top: 64px;
     }
 
     .about-us-title {
@@ -51,36 +52,41 @@ margin-bottom: 40px;
     margin-bottom: 0;
     margin-right: 40px;
 
- }
- .abous-us-list-div{
+    }
+   .abous-us-list-div{
     display: flex;
     flex-direction: row;
-   }
-
- .about-us-list{
-    display: flex;
-    flex-direction: row;
-margin-top: 64px;
-margin-bottom: 40px;
-
-}
-.about-us-list-item{
-
-}
-.first{width: 220px;}
-.second{width: 250px;}
-}
-@media screen and (min-width: 1280px) {
-    .container {
-        max-width: 1216px;
     }
 
-    .first{width: 439px;}
-.second{width: 380px;}
+    .about-us-list{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    }
+   .about-us-list-item{}
 
-.about-us-title {
-  
-    margin-right:110px;
+   .first{
+    width: 220px;
+   }
 
- }
+   .second{
+    width: 250px;
+   }
+  }
+
+  @media screen and (min-width: 1280px) {
+  .container {
+  max-width: 1216px;
+  }
+
+  .about-us {
+    padding-top: 80px;
+}
+
+  .first{width: 439px;}
+  .second{width: 380px;}
+
+  .about-us-title {
+  margin-right:110px;
+  }
 }
