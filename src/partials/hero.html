@@ -1,91 +1,94 @@
-<div class="container hero-container">
-  <h1 class="hero-title">Welcome to our collection of premium watches</h1>
-  <div class="swiper_slider">
-    <div class="swiper-image-frame">
-      <img
-        class="swiper-image"
+<section class="hero-section">
+  <div class="container hero-container">
+    <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+    <div class="swiper_slider">
+      <div class="swiper-image-frame">
+        <img
+          class="swiper-image"
+          srcset="
+            ./img/hero/hero-swiper-1-mobile.webp   226w,
+            ./img/hero/hero-swiper-1-pc-table.webp 348w
+          "
+          sizes="(min-width: 768px) 348px, (min-width: 320px) 226px, 100vw"
+          src="./img/hero/hero-swiper-1-mobile.webp"
+          alt="Watch"
+        />
+      </div>
+
+      <div class="swiper-nav">
+        <div class="swiper-buttons">
+          <div class="swipper-button-pev">
+            <button class="swiper-previous" type="button">
+              <svg class="swiper-button-icon">
+                <use
+                  class="chevron-left-18"
+                  href="./img/icons.svg#chevron-left-dark-18"
+                ></use>
+                <use
+                  class="chevron-left-24"
+                  href="./img/icons.svg#chevron-left-dark-24"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="swipper-button-pev">
+            <button class="swiper-next" type="button">
+              <svg class="swiper-button-icon">
+                <use
+                  class="chevron-right-18"
+                  href="./img/icons.svg#chevron-right-light-18"
+                ></use>
+                <use
+                  class="chevron-right-24"
+                  href="./img/icons.svg#chevron-right-light-24"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper-pagination">
+          <p class="swiper-start-number">01</p>
+          <p class="swiper-end-number">05</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="hero-text">
+      Our watches are not just timepieces, but also an expression of your
+      personality and lifestyle. From classic designs to modern ones, we have a
+      watch to suit every taste and occasion.
+    </p>
+
+    <picture class="hero-image">
+      <source
         srcset="
-          ./img/hero/hero-swiper-1-mobile.webp   226w,
-          ./img/hero/hero-swiper-1-pc-table.webp 348w
+          ./img/hero/hero-hand-pc.jpg     676w,
+          ./img/hero/hero-hand-pc@2x.jpg 1352w
         "
-        sizes="(min-width: 768px) 348px, (min-width: 320px) 226px, 100vw"
-        src="./img/hero/hero-swiper-1-mobile.webp"
-        alt="Watch"
+        type="image/jpeg"
+        media="(min-width: 1280px)"
+        sizes="(min-width: 1280px) 676px, 100vw"
       />
-    </div>
-
-    <div class="swiper-nav">
-      <div class="swiper-buttons">
-        <div class="swipper-button-pev">
-          <button class="swiper-previous" type="button">
-            <svg class="swiper-button-icon">
-              <use
-                class="chevron-left-18"
-                href="./img/icons.svg#chevron-left-dark-18"
-              ></use>
-              <use
-                class="chevron-left-24"
-                href="./img/icons.svg#chevron-left-dark-24"
-              ></use>
-            </svg>
-          </button>
-        </div>
-        <div class="swipper-button-pev">
-          <button class="swiper-next" type="button">
-            <svg class="swiper-button-icon">
-              <use
-                class="chevron-right-18"
-                href="./img/icons.svg#chevron-right-light-18"
-              ></use>
-              <use
-                class="chevron-right-24"
-                href="./img/icons.svg#chevron-right-light-24"
-              ></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="swiper-pagination">
-        <p class="swiper-start-number">01</p>
-        <p class="swiper-end-number">05</p>
-      </div>
-    </div>
+      <source
+        srcset="
+          ./img/hero/hero-hand-mobile.jpg    335w,
+          ./img/hero/hero-hand-mobile@2x.jpg 670w
+        "
+        type="image/jpeg"
+        media="(max-width: 767px)"
+        sizes="(max-width: 767px) 335px, 100vw"
+      />
+      <source
+        srcset="
+          ./img/hero/hero-hand-table.jpg     704w,
+          ./img/hero/hero-hand-table@2x.jpg 1408w
+        "
+        type="image/jpeg"
+        media="(min-width: 768px)"
+        sizes="(min-width: 768px) 704px, 100vw"
+      />
+      <img src="./img/hero/hero-hand-table.jpg" alt="Hand with watch" />
+    </picture>
   </div>
-
-  <p class="hero-text">
-    Our watches are not just timepieces, but also an expression of your
-    personality and lifestyle. From classic designs to modern ones, we have a
-    watch to suit every taste and occasion.
-  </p>
-
-  <picture class="hero-image">
-    <source
-      srcset="
-        ./img/hero/hero-hand-pc.jpg     676w,
-        ./img/hero/hero-hand-pc@2x.jpg 1352w
-      "
-      type="image/jpeg"
-      media="(min-width: 1280px)"
-      sizes="(min-width: 1280px) 676px, 100vw"
-    />
-    <source
-      srcset="
-        ./img/hero/hero-hand-mobile.jpg    335w,
-        ./img/hero/hero-hand-mobile@2x.jpg 670w
-      "
-      type="image/jpeg"
-      media="(max-width: 767px)"
-      sizes="(max-width: 767px) 335px, 100vw"
-    />
-    <source
-      srcset="
-        ./img/hero/hero-hand-table.jpg     704w,
-        ./img/hero/hero-hand-table@2x.jpg 1408w
-      "
-      type="image/jpeg"
-      media="(min-width: 768px)"
-      sizes="(min-width: 768px) 704px, 100vw"
-    />
-    <img src="./img/hero/hero-hand-table.jpg" alt="Hand with watch" />
-  </picture>
-</div>
+  <section></section>
+</section>

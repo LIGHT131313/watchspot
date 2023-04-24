@@ -1,11 +1,3 @@
-.container {
-  max-width: 375px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--color-black);
-} /*--вже є в reset.css--*/
 .hero-title {
   font-weight: 600;
   font-size: 38px;
@@ -18,7 +10,9 @@
     max-width: 335px;
   }
 }
-
+.hero-section {
+  background-color: var(--color-black);
+}
 .hero-container {
   padding-top: 122px;
   padding-bottom: 40px;
