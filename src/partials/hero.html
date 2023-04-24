@@ -60,29 +60,32 @@
 
   <picture class="hero-image">
     <source
-      srcset="./img/hero/hero-hand-pc.jpg 1x, ./img/hero/hero-hand-pc@2x.jpg 2x"
+      srcset="
+        ./img/hero/hero-hand-pc.jpg     676w,
+        ./img/hero/hero-hand-pc@2x.jpg 1352w
+      "
       type="image/jpeg"
       media="(min-width: 1280px)"
-      sizes="(min-width: 1280px) 676px"
+      sizes="(min-width: 1280px) 676px, 100vw"
     />
     <source
       srcset="
-        ./img/hero/hero-hand-mobile.jpg    1x,
-        ./img/hero/hero-hand-mobile@2x.jpg 2x
+        ./img/hero/hero-hand-mobile.jpg    335w,
+        ./img/hero/hero-hand-mobile@2x.jpg 670w
       "
       type="image/jpeg"
       media="(max-width: 767px)"
-      sizes="(max-width: 767px) 335px"
+      sizes="(max-width: 767px) 335px, 100vw"
     />
     <source
       srcset="
-        ./img/hero/hero-hand-table.jpg    1x,
-        ./img/hero/hero-hand-table@2x.jpg 2x
+        ./img/hero/hero-hand-table.jpg     704w,
+        ./img/hero/hero-hand-table@2x.jpg 1408w
       "
       type="image/jpeg"
       media="(min-width: 768px)"
-      sizes="(min-width: 768px) 704px"
+      sizes="(min-width: 768px) 704px, 100vw"
     />
-    <img src="./img/hero/hero-hand-mobile.jpg" alt="Hand with watch" />
+    <img src="./img/hero/hero-hand-table.jpg" alt="Hand with watch" />
   </picture>
 </div>
