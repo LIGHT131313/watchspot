@@ -31,11 +31,10 @@ img {
 body {
   font-family: 'Epilogue', sans-serif;
   font-style: normal;
-  background-color: #FBFBFB
 }
 
 .container {
-  max-width: 375px;
+  width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
