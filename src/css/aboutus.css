@@ -32,8 +32,9 @@ gap: 20px;}
 .about-us-list-item{}
 
 .about-us-gif {
-margin-right: 0;
+
  display: block;
+ width: 335px;
 }
 
     @media screen and (min-width: 768px) {
@@ -62,6 +63,7 @@ margin-right: 0;
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
+    justify-content: start;
     }
    .about-us-list-item{}
 
@@ -71,6 +73,11 @@ margin-right: 0;
 
    .second{
     width: 250px;
+   }
+
+   .about-us-gif {
+    width: 704px;
+    margin-right: 0;
    }
   }
 
@@ -89,4 +96,9 @@ margin-right: 0;
   .about-us-title {
   margin-right:110px;
   }
+
+  .about-us-gif {
+    width: 892px;
+    margin-left: auto;
+   }
 }
