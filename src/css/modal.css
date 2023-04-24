@@ -41,12 +41,12 @@
 .backdrop.is-hidden .modal {
 }
 
-.is-hidden { 
+/* .is-hidden { 
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-}
-
+  }
+    */
 
 .modal-close {
   display: block;
