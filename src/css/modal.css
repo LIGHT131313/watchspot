@@ -238,6 +238,8 @@ input:valid {
 }
 
 @media screen and (min-width: 375px) {
+  .modal {
+    width: 335px;}
 }
 
 @media screen and (min-width: 768px) {
