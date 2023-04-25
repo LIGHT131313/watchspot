@@ -14,7 +14,7 @@
   background-color: var(--color-black);
 }
 .hero-container {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 .swiper_slider {
@@ -121,7 +121,7 @@
     max-width: 744px;
   }
   .hero-container {
-    padding-top: 148px;
+    padding-top: 60px;
     padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
