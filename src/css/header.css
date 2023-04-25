@@ -161,6 +161,11 @@
 .mob-menu.is-hidden {
   transform: translateX(100%);
 }
+.no-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
 /* menu */
 
 @media screen and (min-width: 768px) {
