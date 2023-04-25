@@ -26,13 +26,20 @@
 }
 
 .abous-us-list-div {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .about-us-gif {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.gif-frame {
   display: block;
+
   width: 335px;
   height: 365px;
 }
@@ -75,7 +82,7 @@
   .second {
     width: 250px;
   }
-  .about-us-gif {
+  .gif-frame {
     margin-right: 0;
     width: 704px;
     height: 465px;
@@ -103,7 +110,7 @@
     margin-right: 110px;
   }
 
-  .about-us-gif {
+  .gif-frame {
     margin-left: auto;
     width: 892px;
     height: 500px;
