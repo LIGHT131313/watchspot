@@ -59,11 +59,11 @@
             <label for="user-name" class="modal-label-text">Card number</label>
 
             <input
-              type="text"
+              type="number"
               class="modal-input"
               placeholder="Enter card"
               name="user-name"
-              pattern="[0-9]*"
+              pattern="(?:\d{4}[- ]){3}\d{4}|\d{16}"
               required
               id="user-name"
             />
