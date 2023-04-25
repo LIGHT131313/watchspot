@@ -221,6 +221,9 @@
   .address {
     display: block;
   }
+  .no-scroll {
+    overflow: auto;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -242,12 +245,17 @@
   }
   .text-header:hover,
   .text-headet:focus {
+    transition: opacity var(--transition), scale var(--transition);
     opacity: 0.7;
+    scale: 1.5;
   }
   .address:hover,
   .addrees:focus {
     opacity: 0.7;
     transition: opacity var(--transition);
+  }
+  .no-scroll {
+    overflow: auto;
   }
 }
 
