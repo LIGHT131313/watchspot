@@ -3,10 +3,6 @@
   background-color: var(--color-black);
 }
 
-.header-link-list {
-  display: flex;
-}
-
 .text-link {
   font-size: 12px;
   line-height: 12px;
@@ -46,11 +42,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
+
 .logo {
   display: flex;
   align-items: center;
@@ -63,8 +55,6 @@
   color: var(--color-white);
 }
 .logo-svg {
-  width: 14px;
-  height: 14px;
   display: flex;
   align-items: center;
 }
@@ -201,11 +191,6 @@
   .mob-menu {
     display: none;
   }
-  .logo-svg {
-    width: 19px;
-    height: 19px;
-  }
-
   .logo-img {
     width: 19px;
     height: 19px;
