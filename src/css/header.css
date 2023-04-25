@@ -68,6 +68,11 @@
   display: flex;
   align-items: center;
 }
+.logo-svg:hover,
+.logo-svg:focus {
+  transition: opacity var(--transition);
+  scale: 1.5;
+}
 .logo-img {
   width: 14px;
   height: 14px;
@@ -76,12 +81,17 @@
 
 .text-menu {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--color-white);
 }
-
+.text-menu:hover,
+.text-menu:focus {
+  transition: opacity var(--transition), font-size var(--transition);
+  opacity: 0.7;
+  font-size: 20px;
+}
 .text-margin:not(:last-child) {
   margin-bottom: 14px;
 }
@@ -159,6 +169,7 @@
 .mob-menu.is-hidden {
   transform: translateX(100%);
 }
+
 .no-scroll {
   margin: 0;
   height: 100%;
@@ -217,9 +228,19 @@
     color: var(--color-white);
     transition: opacity var(--transition);
   }
-
   .address {
     display: block;
+  }
+  .text-header:hover,
+  .text-header:focus {
+    transition: opacity var(--transition), scale var(--transition);
+    opacity: 0.7;
+    scale: 1.5;
+  }
+  .address:hover,
+  .addrees:focus {
+    opacity: 0.7;
+    transition: opacity var(--transition);
   }
   .no-scroll {
     overflow: auto;
@@ -243,17 +264,7 @@
     display: flex;
     gap: 40px;
   }
-  .text-header:hover,
-  .text-headet:focus {
-    transition: opacity var(--transition), scale var(--transition);
-    opacity: 0.7;
-    scale: 1.5;
-  }
-  .address:hover,
-  .addrees:focus {
-    opacity: 0.7;
-    transition: opacity var(--transition);
-  }
+
   .no-scroll {
     overflow: auto;
   }
