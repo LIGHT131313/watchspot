@@ -229,7 +229,7 @@
   }
   .logo-svg:hover,
   .logo-svg:focus {
-    transition: opacity var(--transition);
+    transition: scale var(--transition);
     scale: 1.2;
   }
   .text-header:hover,
