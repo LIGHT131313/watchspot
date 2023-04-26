@@ -14,7 +14,7 @@
   background-color: var(--color-black);
 }
 .hero-container {
-  padding-top: 122px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 .swiper_slider {
@@ -121,7 +121,7 @@
     max-width: 744px;
   }
   .hero-container {
-    padding-top: 148px;
+    padding-top: 60px;
     padding-bottom: 64px;
     display: flex;
     flex-wrap: wrap;
@@ -178,6 +178,8 @@
     width: 40px;
   }
   .hero-text {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 20px;
     max-width: 248px;
   }
@@ -205,7 +207,6 @@
   }
   .hero-text {
     order: 2;
-    margin-top: 0;
     align-self: flex-start;
     margin-left: 144px;
     max-width: 282px;
