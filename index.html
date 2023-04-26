@@ -8,7 +8,7 @@
   <title>The Watch Spot</title>
   
   <script type="module" crossorigin src="/watchspot/assets/index-aa7f7c17.js"></script>
-  <link rel="stylesheet" href="/watchspot/assets/index-30bd5b1f.css">
+  <link rel="stylesheet" href="/watchspot/assets/index-9cc1bf93.css">
 </head>
 
 <body>
@@ -790,7 +790,7 @@
                 </a>
             </div>
             <div>
-                <nav class="footer-nav">
+                <div class="footer-nav">
                     <ul class="footer-nav-list">
                         <li class="footer-nav-list-item"><a class="footer-nav-list-link" href="#aboutus">About us</a>
                         </li>
@@ -798,7 +798,7 @@
                         </li>
                         <li class="footer-nav-list-item"><a class="footer-nav-list-link" href="#sale">Sale</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
             <div class="footer-sn">
                 <ul class="footer-sn-list">
@@ -837,7 +837,9 @@
             </div>
         </div>
         <div class="footer-privacy">
-            <p class="footer-privacy-text">&copy;2022 The Watch Spot. All rights reserved.</p>
+            <p class="footer-privacy-text">
+                <span>&#169;</span>2022 The Watch Spot. All rights reserved.
+            </p>
             <ul class="footer-privacy-list">
                 <li class="footer-privacy-list-item">
                     <a class="footer-privacy-list-link" href="" target="_blank"
@@ -863,21 +865,13 @@
 
     <div class="modal-wrap">
       <div class="modal-catalog-wrap">
-        <img
-          class="modal-catalog-img"
-          src="./img/catalog-pic-1.png"
-          srcset="
-            ./img/catalog-pic-1-1x.webp 1x,
-            ./img/catalog-pic-1-2x.webp 2x"
-          alt="image"
-          width="276"
-          height="274"
-        />
+        <img class="modal-catalog-img" src="/watchspot/assets/catalog-pic-1-df4059fa.png" srcset="/watchspot/assets/catalog-pic-1-ab045b29.webp 1x, /watchspot/assets/catalog-pic-1@2x-49e7a232.webp 2x" alt="image" width="276" height="274" />
 
-          <p class="modal-text-wrap-title">
-            Tube Watch S42 Date Steel With Black...
-          <span class="modal-text-wrap-text">€395</span></p>
-        
+        <p class="modal-text-wrap-title">
+          Tube Watch S42 Date Steel With Black...
+          <span class="modal-text-wrap-text">€395</span>
+        </p>
+
       </div>
 
       <form class="modal-form">
@@ -885,62 +879,37 @@
           <div class="modal-input-wrap">
             <label for="user-name" class="modal-label-text">Full name</label>
 
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="Enter your full name"
-              name="user-name"
-              pattern="^(\w\w+)\s(\w+)$"
-              required
-              id="user-name"
-            />
+            <input type="text" class="modal-input" placeholder="Enter your full name" name="user-name"
+              pattern="^(\w\w+)\s(\w+)$" required id="user-name" />
           </div>
 
           <div class="modal-input-wrap">
-            <label for="user-name" class="modal-label-text">Email</label>
+            <label for="user-email" class="modal-label-text">Email</label>
 
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="Enter your email"
-              name="user-name"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              required
-              id="user-name"
-            />
+            <input type="email" class="modal-input" placeholder="Enter your email" name="user-email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id="user-email" />
           </div>
 
           <div class="modal-input-wrap">
-            <label for="user-name" class="modal-label-text">Card number</label>
+            <label for="user-card" class="modal-label-text">Card number</label>
 
-            <input
-              type="text"
-              class="modal-input"
-              placeholder="Enter card"
-              name="user-name"
-              pattern="[0-9]*"
-              required
-              id="user-name"
-            />
+            <input class="modal-input" placeholder="Enter card" name="user-card" type="tel" inputmode="numeric"
+              pattern="[0-9\s]{13,19}" autocomplete="cc-number" minlength="16" maxlength="19" required id="user-card" />
           </div>
 
           <div class="modal-input-wrap">
             <label for="user-comment" class="modal-label-text">Comments</label>
-            <textarea
-              name="user-comment"
-              id="user-comment"
-              class="modal-textarea"
-              placeholder="Enter your text"
-            ></textarea>
+            <textarea name="user-comment" id="user-comment" class="modal-textarea"
+              placeholder="Enter your text"></textarea>
           </div>
         </div>
 
         <div class="modal-submit">
           <button class="modal-sent-btn" type="submit">submit</button>
           <p class="modal-sent-btn-text">
-            By clicking on “Submit” button, you agree to our <a href="./" class="modal-link">Privacy Policy</a>, 
-            and allow Promodo to use this information for marketing purposes. 
-            
+            By clicking on “Submit” button, you agree to our <a href="./" class="modal-link">Privacy Policy</a>,
+            and allow Promodo to use this information for marketing purposes.
+
           </p>
         </div>
       </form>
@@ -955,6 +924,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
+  <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
