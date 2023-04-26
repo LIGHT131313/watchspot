@@ -36,9 +36,10 @@
   height: 100%;
   width: 100%;
 }
+
 .gif-frame {
   display: block;
-  max-width: 335px;
+  width: 335px;
   height: 365px;
 }
 
