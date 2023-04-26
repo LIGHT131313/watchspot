@@ -39,11 +39,14 @@
 }
 .gif-frame {
   display: block;
-
-  width: 335px;
+  /* width: 335px; */
   height: 365px;
 }
-
+@media screen and (max-width: 767px) {
+  .gif-frame {
+    max-width: 335px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 744px;

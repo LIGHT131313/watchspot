@@ -16,7 +16,9 @@
   flex-wrap: wrap;
   gap: 40px;
 }
-
+.catalog-list-item {
+  max-width: 335px;
+}
 .catalog-list-name {
   font-weight: 400;
   font-size: 14px;
