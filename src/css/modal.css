@@ -15,7 +15,7 @@
 }
 
 .modal {
-  width: 335px;
+  width: 100%;
   padding: 40px 20px 22px;
   background-color: var(--color-white);
   border: none;
@@ -62,8 +62,8 @@
 }
 
 .modal-close-icon {
-  width: 100%;
-  height: 100%;
+  width: 10px;
+  height: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,6 +238,8 @@ input:valid {
 }
 
 @media screen and (min-width: 375px) {
+  .modal {
+    width: 335px;}
 }
 
 @media screen and (min-width: 768px) {
@@ -251,11 +253,17 @@ input:valid {
   }
 
   .modal-close {
+    
     top: 26px;
     right: 26px;
     width: 24px;
     height: 24px;
   }
+  .modal-close-icon {
+    width: 12px;
+    height: 12px;
+  }
+  
   .modal-wrap {
     width: 100%;
     flex-direction: row;
