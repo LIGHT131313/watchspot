@@ -2,8 +2,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.container {
-}
+
 .about-us-title {
   font-weight: 600;
   font-size: 32px;
@@ -39,8 +38,7 @@
 }
 .gif-frame {
   display: block;
-
-  width: 335px;
+  max-width: 335px;
   height: 365px;
 }
 

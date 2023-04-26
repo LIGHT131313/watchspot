@@ -120,20 +120,13 @@
   border-color: var(--color-black);
 }
 
-/* input:required:not(:invalid) {
-  outline-color: red;
-} */
-
-/* input:invalid:not(:required) {
-  border-color: red;
-}
-input:valid:is(:required) {
-  border-color: rgba(20, 20, 20, 0.5);
+.modal-input:not(:focus):not(:placeholder-shown) {
+  outline: 1px solid red;
 }
 
-input:valid {
-  border-color: rgba(20, 20, 20, 0.5);
- }  */
+.modal-input:not(:focus):valid {
+  outline: none;
+}
 
 .modal-input::placeholder {
   font-weight: 400;
